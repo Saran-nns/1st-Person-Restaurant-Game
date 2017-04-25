@@ -53,6 +53,6 @@ public class Teen_CameraController : MonoBehaviour {
 	void LookAtTarget()
 	{
 		float eulerYAngle = Mathf.SmoothDampAngle (transform.eulerAngles.y, target.eulerAngles.y,ref rotateVel,lookSmooth);
-		tranform.rotation=Quaternion.Euler(tranform.eulerAngles.x, eulerYAngle,0);
+		transform.rotation=Quaternion.Euler(transform.eulerAngles.x, eulerYAngle,0);
 	}
 }
